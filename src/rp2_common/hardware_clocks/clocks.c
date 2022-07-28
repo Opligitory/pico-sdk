@@ -162,8 +162,8 @@ void clocks_init(void) {
     clock_configure(clk_ref,
                     CLOCKS_CLK_REF_CTRL_SRC_VALUE_XOSC_CLKSRC,
                     0, // No aux mux
-                    12 * MHZ,
-                    12 * MHZ);
+                    XOSC_MHZ * MHZ,
+                    XOSC_MHZ * MHZ);
 
     /// \tag::configure_clk_sys[]
     // CLK SYS = PLL SYS (125MHz) / 1 = 125MHz
